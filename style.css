@@ -1,0 +1,243 @@
+* {
+  font-family: "gilroy";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+main {
+  height: 100%;
+  width: 100%;
+}
+#nav1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  padding: 0 40px;
+}
+#nav1 h5{
+  display: none;
+}
+#navp1 {
+  display: flex;
+  gap: 01px;
+}
+#navp2 {
+  display: flex;
+  gap: 40px;
+}
+#navp2 h4 {
+  font-size: 15px;
+  font-weight: 600;
+}
+#navp2 h4 span {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(153, 153, 153);
+}
+.cir {
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  background-color: black;
+}
+#nav2 {
+  height: 80px;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 0 50px;
+  text-transform: uppercase;
+}
+#nav2 h4 {
+  font-size: 15px;
+  font-weight: 700;
+}
+#content {
+  width: 100%;
+  height: calc(100% - 140px);
+  /* background-color: rgb(190, 182, 182); */
+}
+#textcont::-webkit-scrollbar {
+  height: 7px;
+  width: 0%;
+  background-color: transparent;
+}
+#textcont::-webkit-scrollbar-thumb {
+  background-color: orangered;
+  border-radius: 5px;
+}
+
+#textcont {
+  display: flex;
+  height: 40%;
+  width: 100%;
+  /* background-color: red; */
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+.elem {
+  display: flex;
+  flex-shrink: 0;
+  height: 100%;
+  width: 55%;
+
+  align-items: center;
+  justify-content: center;
+}
+.elem h1 {
+  font-size: 75px;
+  font-weight: 300;
+}
+
+#imgcont {
+  display: flex;
+  width: 100%;
+  height: 60%;
+  background-color: rebeccapurple;
+   flex-wrap: nowrap;
+  overflow-x: auto; 
+}
+#imgcont::-webkit-scrollbar{
+  display: none;
+}
+#imgcont img {
+  flex-shrink: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 0 18%;
+}
+#imgcont img:nth-child(3) {
+  object-position: 0 35%;
+}
+
+@media (max-width:600px) {
+  #nav1 {
+    /* background-color: red; */
+    height: 60px;
+    padding: 0 15px;
+    /* padding-right: 20px; */
+  }
+  #navp1 {
+    
+    display: flex;
+    gap: 0px;
+  }
+  #navp2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  #nav1 h5{
+    display: initial;
+    font-size: 3vw;
+  }
+  #navp2 h4 {
+    display: none;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  #navp2 h4:nth-child(1) {
+    display: initial;
+
+    font-size: 3vw;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+  }
+  #navp2 h4 span {
+    margin-left: 02px;
+    font-size: 3.1vw;
+    font-weight: 600;
+    color: rgb(54, 54, 54);
+  }
+  .cir {
+    height: 4vw;
+    width: 4vw;
+    border-radius: 50%;
+    background-color: black;
+  }
+  #nav2 {
+    height: 60px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    gap: 05px;
+    padding: 0 15px;
+    text-transform: uppercase;
+  }
+  #nav2 h4 {
+    color: rgb(94, 92, 92);
+    font-size: 3.1vw;
+    font-weight: 900;
+  }
+  #content {
+    width: 100%;
+    height: calc(100% - 120px);
+    /* background-color: rgb(190, 182, 182); */
+  }
+  #textcont::-webkit-scrollbar {
+    height: 4px;
+    width: 0%;
+    background-color: transparent;
+  }
+  #textcont::-webkit-scrollbar-thumb {
+    background-color: rgb(235, 88, 34);
+    border-radius: 5px;
+  }
+  
+  #textcont {
+    display: flex;
+    height: 50%;
+    width: 100%;
+    /* background-color: red; */
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .elem {
+    display: flex;
+    flex-shrink: 0;
+    height: 100%;
+    width: 70%;
+  
+    align-items: center;
+    justify-content: center;
+  }
+  .elem h1 {
+    font-size: 8.6vw;
+    font-weight: 400;
+  }
+  
+#imgcont {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  background-color: rebeccapurple;
+   flex-wrap: nowrap;
+  overflow-x: auto; 
+}
+#imgcont::-webkit-scrollbar{
+  display: none;
+}
+#imgcont img {
+  flex-shrink: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+#imgcont img:nth-child(3) {
+  object-position: center;
+}
+}
